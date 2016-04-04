@@ -3,18 +3,41 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+  <script   src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
+  <title>Countries</title>
 </head>
 <body>
+  <p>Around The World</p>
+
+  Country name: <input type="text" name="fname"><br>
+    <Button class="yuki">Search</Button>
+
+
 
 <script id="jsbin-javascript">
-var countries=["South Korea","North Korea","Finland","Spain","Germany","China"];
-  console.log(countries[0]);
+var countries={
+"South Korea":"Seoul",
+"North Korea": "Pyongyang",
+"Finland":" Helsinki",
+"Spain":" Madrid",
+"Germany":"Berlin",
+"China":"Beijing"
+  
+};
+// var country=prompt("what country do want learn about?");
+//   alert(countries[country]);
+$(".yuki").click(function(){
+// asked countries?
+var w = $("input").val();
+// alert(w); 
+var Capital= countries[w]
+alert (Capital);
+// from list
+// display            
+            });
+
+// alert(countries[1]);
+
 </script>
-
-
-
-<script id="jsbin-source-javascript" type="text/javascript">var countries=["South Korea","North Korea","Finland","Spain","Germany","China"];
-  console.log(countries[0]);
-</script></body>
+</body>
 </html>
